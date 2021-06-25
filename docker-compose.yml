@@ -35,6 +35,13 @@ services:
     labels:
       - io.balena.features.supervisor-api=1
 
+  nextcloud-sync:
+    build: nextcloud-sync
+    restart: no
+    privileged: true
+    volumes:
+      - photos:/photos
+
 volumes:
   db:
   photos:
