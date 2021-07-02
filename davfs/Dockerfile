@@ -1,10 +1,8 @@
-FROM debian:bullseye-slim
+FROM alpine:3.14.0
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y davfs2 rsync && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache davfs2 rsync
 
 COPY run.sh /
 
