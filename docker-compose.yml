@@ -35,8 +35,8 @@ services:
     labels:
       - io.balena.features.supervisor-api=1
 
-  nextcloud-sync:
-    build: nextcloud-sync
+  davfs:
+    build: davfs
     restart: no
     privileged: true
     volumes:

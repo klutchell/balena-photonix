@@ -6,8 +6,8 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y davfs2 rsync && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY init.sh /
+COPY run.sh /
 
-RUN chmod +x /init.sh
+RUN chmod +x /run.sh
 
-CMD [ "/init.sh" ]
+CMD [ "/run.sh" ]
