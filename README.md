@@ -21,6 +21,12 @@ flashing a device, downloading the project and pushing it via the [balena CLI](h
 
 Photonix configuration variables can be found here: <https://photonix.org/docs/configuration/>
 
+| Name              | Description                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| `WEBDAV_URL`      | (optional) Provide WebDAV URL to auto-import photos. Leave blank to have the `davfs` service remain disabled. |
+| `WEBDAV_USERNAME` | (optional) Username to authenticate to the WebDAV URL above.                                                  |
+| `WEBDAV_PASSWORD` | (optional) Password to authenticate to the WebDAV URL above.                                                  |
+
 ## Usage/Examples
 
 Once your device joins the fleet you'll need to allow some time for it to download the application and start the services.
