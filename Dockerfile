@@ -1,5 +1,6 @@
-FROM photonixapp/photonix:0.11.0
+FROM photonixapp/photonix:0.24.0
 
+# hadolint ignore=DL3008
 RUN apt-get update && \
     apt-get install --no-install-recommends -y curl && \
     apt-get clean && rm -rf /var/lib/apt/lists/*

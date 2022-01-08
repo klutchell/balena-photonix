@@ -1,0 +1,26 @@
+name: "Photonix"
+type: "sw.application"
+version: 0.24.0
+description: "Photonix is a modern, web-based photo management server."
+post-provisioning: >-
+  ## Usage instructions
+
+  Once your device joins the fleet you'll need to allow some time for it to download the application and start the services.
+
+  When it's done you should be able to access the access the app at <http://photonix.local>.
+
+  Additional usage instructions for Photonix can be found here: <https://photonix.org/docs/>.
+assets:
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/klutchell/balena-photonix"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/klutchell/balena-photonix/main/logo.png"
+data:
+  defaultDeviceType: "raspberrypi4-64"
+  supportedDeviceTypes:
+    - "raspberrypi3-64"
+    - "raspberrypi4-64"

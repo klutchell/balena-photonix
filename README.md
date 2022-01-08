@@ -1,6 +1,6 @@
 # balena-photonix
 
-[Photonix](https://photonix.org/) is a photo management application that streamlines the process of storing, presenting and re-discovering photos.
+[Photonix](https://photonix.org/) is a modern, web-based photo management server.
 
 ## Hardware Required
 
@@ -10,7 +10,7 @@
 
 You can one-click-deploy this project to balena using the button below:
 
-[![Deploy with balena](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/klutchell/balena-photonix&defaultDeviceType=raspberrypi3)
+[![Deploy with balena](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/klutchell/balena-photonix)
 
 ## Manual Deployment
 
@@ -25,9 +25,9 @@ Photonix configuration variables can be found here: <https://photonix.org/docs/c
 
 Once your device joins the fleet you'll need to allow some time for it to download the application and start the services.
 
-When it's done you should be able to access the access the app at <http://photonix.local>
+When it's done you should be able to access the access the app at <http://photonix.local>.
 
-Additional usage instructions for Photonix can be found here: <https://photonix.org/docs/>
+Additional usage instructions for Photonix can be found here: <https://photonix.org/docs/>.
 
 ## Contributing
 
@@ -35,4 +35,4 @@ Please open an issue or submit a pull request with any features, fixes, or chang
 
 ## Acknowledgements
 
-- <https://github.com/photonixapp/photonix>
+Photonix app is provided by <https://photonix.org>
